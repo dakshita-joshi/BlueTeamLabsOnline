@@ -1,0 +1,12 @@
+In this challenge, we were given a bash history and had to answer questions based on it
+
+daniel is mentioned as a user quite clearly.
+
+root wget linux-exploit-suggester.sh gives answer to what script was downloaded.
+
+The last line shows an x.phtml file being removed. This also answers what filter is used it is a .phtml upload filter.
+
+For last question, what misconfiguration was exploited, after a lot of detours. The user searches for files owned by root with permission 4000. 4 digit permissions imply special permissions. 
+The first digit specifies if it is SUID, SGID, and sticky bit. 4 stands for SUID, so this is the misconfiguration the user exploited. 
+
+DONE!
