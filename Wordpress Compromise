@@ -19,3 +19,5 @@ To answer what was the last request failure error code, I grepped and the last a
 Finally, after a lot of bruteforcing and scrolling through the logs, I found the answer to the tools the attacker used as sqlmap and wpscan. 
 
 DONE!
+
+(Im sorry, for some reason I cannot add screenshots here)
