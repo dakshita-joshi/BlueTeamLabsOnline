@@ -1,0 +1,21 @@
+In this challenge, we are given access logs of a wordpress compromise incident. We are to analyse these logs and 
+answer the questions. The tools used are goaccess.
+
+goaccess access.log
+
+An HTTP POST request to a login shell made with an adminlogin token is the answer to the first question wp-login.php?itsec-hb-token=adminlogin
+
+
+The POST request that was made was to upload fr34k.php web shell file so that was the answer to question 5. 
+
+fr34k.php was uploaded with simple-file-list so that would be the answer to what plugin was exploited to gain access.
+
+For the version I looked it up on exploit database and it showed 4.2.2
+
+To answer what CVE was the plugin vulnerable to, I googled contact form 7 and the CVE was CVE-2020-35489.
+
+To answer what was the last request failure error code, I grepped and the last answer was 404.
+
+Finally, after a lot of bruteforcing and scrolling through the logs, I found the answer to the tools the attacker used as sqlmap and wpscan. 
+
+DONE!
